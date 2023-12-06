@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="es-ES">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SergyPull - website</title>
+
+    <!-- Start CSS FILES -->
+    <link rel="stylesheet" href="_CSS/default.css">
+    <link rel="stylesheet" href="_CSS/menu.css">
+    <link rel="stylesheet" href="_CSS/content/main.css">
+    <!-- End CSS FILES -->
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet"><!--font-family: 'Chakra Petch', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet"><!--font-family: 'Ephesis', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"><!--font-family: 'Orbitron', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet"><!--font-family: 'Dhurjati', sans-serif;-->
+ </head>
+ <body id="body">
+    <nav id="main_nav">
+        <!-- Button -->
+        <!-- <div class="menu_button">
+            <img src="_IMG/menu.png" alt="menu-icon" width="35" height="35" style="padding: 18px 0 0 18px; opacity: 0.9;"> -->
+        </div>
+        <!-- Content -->
+        <div id="fixed_content_nav" style="display: none;">
+            <div id="title_fixed_content_nav">
+                <div class="title_nav" id="menu" style="background-color: black;">Menu</div>
+                <div class="title_nav" id="options">Options</div>
+            </div>
+            <div class="content_menu" id="contentMenu_fixed_content_nav">
+                <ul id="display_content_menu">
+                    <li class="list_content_menu" id="home">
+                        <h3 class="box_list_content_menu">INICIO</h3>
+                    </li>
+                    <li class="list_content_menu" id="proyects">
+                        <h3 class="box_list_content_menu">PROYECTOS</h3>
+                    </li>
+                    <li class="list_content_menu" id="services">
+                        <h3 class="box_list_content_menu">SERVICIOS</h3>
+                    </li>
+                    <li class="list_content_menu" id="aboutme">
+                        <h3 class="box_list_content_menu">SOBRE MI</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_menu" id="contentOptions_fixed_content_nav">
+            </div>
+            
+        </div>
+        <div id="menu_button">
+            <img src="_IMG/menu.png" alt="menu-icon" id="img_menu_icon">
+        </div>
+    </nav>
+    <div id="content_title">
+        <h1>SERGYPULL</h1>
+        <h2>Personal Website</h2>
+    </div>
+
+    <script>
+        // window.onscroll = function() {
+        //     var y = window.scrollY;
+        //     console.log(y);
+        // };
+        
+        // MENÚ ACCION:
+        
+
+        function changeImage() {
+            const img_buttom_menu = document.getElementById("img_menu_icon");
+            const box_content_menu = document.getElementById("fixed_content_nav");
+            if (img_buttom_menu.src.match("exit")) {
+                img_buttom_menu.src = "_img/menu.png";
+                box_content_menu.style.display = "none";
+                body.style.overflow(y) = "scroll"
+
+            } else {
+                img_buttom_menu.src = "_img/exit.png";
+                box_content_menu.style.display = "block"
+                body.style.overflow = "hidden"
+            }
+        }
+
+        const box_button_menu = document.getElementById("menu_button");
+        box_button_menu.addEventListener("click", changeImage)
+        
+
+        
+    </script>
+ </body>
+ </html>
