@@ -137,7 +137,7 @@
 
     /* TITLE */
     #introduction_title{align-items: end;gap: 30px;}
-        #introduction_title_logo{height: 100px}
+        #introduction_title_logo{height: 100px};
         #introduction_title_text{height: 70px;
             font-size: 2em; letter-spacing: 8px;
             font-family: "Russo One", sans-serif; user-select: none;
