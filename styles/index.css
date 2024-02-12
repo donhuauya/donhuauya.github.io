@@ -159,9 +159,7 @@
     #menu_toggle{right: 20px;}
     #content_menu_toggle{width: calc(100% - 130px);}
 
-    #container_language_text{width: calc(100% - 130px)}
-        .text_language{}
-
+    #container_language_text{width: calc(100% - 130px)};
     #introduction_title{
         flex-direction: column;
         justify-content: end;
