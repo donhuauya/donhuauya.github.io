@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SERGYPULL</title>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="shortcut icon" href="./_resources/main-logo_sergypull.png">
+        <!-- CSS SHEETS -->
+        <link rel="stylesheet" href="./styles/index.css">
+    
+        <!-- FONTS -->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    <div id="container" style="background-color: white;"> <!-- for scroll snap -->
+        <!-- 1. INTRODUCTION -->
+        <div class="container_sections" id="introduction">
+            <!-- 1.1 MENU -->    
+            <!-- 1.1.1 Bar_pos_MENU-->
+            <div id="current_menu">
+                <p id="current_menu_text">Inicio</p>
+                <div id="bar_menu">
+                    <div id="current_bar_menu"></div>
+                </div>
+            </div>
+            <!-- 1.1.2 MENU_Toggle -->
+            <div id="menu_toggle">
+                <input type="checkbox" name="button_menu" id="menu_dropdown" class="toggle">
+                <label for="menu_dropdown" id="menu_dropdown_label">
+
+                        <img class="front menu_dropdown_img WhiteMode" src="_resources/buttons/menu.png" alt="menu_button" >
+                        <img class="front menu_dropdown_img DarkMode" src="_resources/buttons/menu_2.png" alt="menu_button_x" style="display: none;">
+
+                        <img class="back menu_dropdown_img WhiteMode" src="_resources/buttons/menu_x.png" alt="menu_button_x">
+                        <img class="back menu_dropdown_img DarkMode" src="_resources/buttons/menu_x_2.png" alt="menu_button_x" style="display: none;">
+                </label>
+            </div>
+            <!-- 1.1.3 Content Menu_Toggle -->
+            <div id="content_menu_toggle" style="opacity: 0; display: none;">
+                <div class="container_sections_menu_toggle">
+                <!-- Left DarkMode -->
+                    <!-- IMG SOL -->
+                    <img src="_resources/buttons/sol.png" alt="" class="img_menu_hidden WhiteMode">
+                    <img src="_resources/buttons/sol_2.png" alt="" class="img_menu_hidden DarkMode" style="display: none;">
+
+                    <!-- BALL SLIDER -->
+                    <input type="checkbox" name="button_mode_Dark" id="button_mode" class="toggle_2">
+                    <label for="button_mode" id="menu_mode_label">
+                        <div id="ball"></div>
+                    </label>
+
+                    <!-- IMG LUNA -->
+                    <img src="_resources/buttons/luna.png" alt="" class="img_menu_hidden WhiteMode">
+                    <img src="_resources/buttons/luna_2.png" alt="" class="img_menu_hidden DarkMode" style="display: none;">
+                </div>
+                <!-- Right language -->
+                <div class="container_sections_menu_toggle" id="action_img_language">
+                    <img class="language_img WhiteMode" src="_resources/buttons/Idioma.png" alt="">
+                    <img class="language_img DarkMode"  src="_resources/buttons/Idioma_2.png" alt="" style="display: none;">
+                </div>
+            </div>
+            <div id="container_language_text" style="display: none;">
+                <p class="text_language" id="spanish_language">Español</p>
+                <p class="text_language" id="english_language">English</p>
+            </div>
+
+            <!-- 1.1 TITLE -->
+            <div class="container_sections_intro-boxs" id="introduction_title">
+                <img id="introduction_title_logo" src="_resources/main-logo_sergypull.png" alt="logo_sergypull">
+                <h1 id="introduction_title_text">SERGYPULL</h1>
+            </div>
+
+            <!-- 1.2 SOCIALMEDIA -->
+            <div class="container_sections_intro-boxs" id="introduction_social-media">
+                    <img class="container_sections_intro-boxs_socialmedia_after WhiteMode" src="_resources/Social_media/after/INSTAGRAM.png" alt="instagram_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_after WhiteMode" src="_resources/Social_media/after/YOUTUBE.png" alt="youtube_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_after WhiteMode" src="_resources/Social_media/after/FACEBOOK.png" alt="facebook_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_after WhiteMode" src="_resources/Social_media/after/SKETCHFAB.png" alt="sketchfab_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_before DarkMode" style="display: none;" src="_resources/Social_media/before/INSTAGRAM_led.png" alt="instagram_led_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_before DarkMode" style="display: none;" src="_resources/Social_media/before/YOUTUBE_led.png" alt="instagram_led_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_before DarkMode" style="display: none;" src="_resources/Social_media/before/FACEBOOK_led.png" alt="instagram_led_logo">
+                    <img class="container_sections_intro-boxs_socialmedia_before DarkMode" style="display: none;" src="_resources/Social_media/before/SKETCHFAB_led.png" alt="instagram_led_logo">
+                </div>
+        </div>
+        <div class="container_sections" id="last_news"></div>
+        <div class="container_sections" id="proyects"></div>
+        <div class="container_sections" id="services"></div>
+        <div class="container_sections" id="about_me"></div>
+        <div class="container_sections" id="contact"></div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
